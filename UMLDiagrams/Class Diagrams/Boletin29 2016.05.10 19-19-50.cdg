@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Boletin29">
+  <ClassDiagramComponents>
+    <Class name="Barco" package="boletin29" visibility="public" isAbstract="true" xPosition="59.0" yPosition="20.0">
+      <Fields>
+        <Field name="eslora" type="int" visibility="protected"/>
+        <Field name="matricula" type="String" visibility="protected"/>
+        <Field name="tipo" type="int" visibility="protected"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getEslora" returnType="int" visibility="public"/>
+        <Method name="getMatricula" returnType="String" visibility="public"/>
+        <Method name="getTipo" returnType="int" visibility="public"/>
+        <Method name="setEslora" returnType="void" visibility="public">
+          <Argument type="int" name="eslora"/>
+        </Method>
+        <Method name="setMatricula" returnType="void" visibility="public">
+          <Argument type="String" name="matricula"/>
+        </Method>
+        <Method name="modulo" returnType="float" visibility="public">
+          <Argument type="int" name="dias"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Boletin29" package="boletin29" visibility="public" xPosition="320.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Deportivo" package="boletin29" visibility="public" xPosition="385.0" yPosition="361.0">
+      <Fields>
+        <Field name="cv" type="int" visibility="private"/>
+        <Field name="tipo" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="eslora"/>
+          <Argument type="String" name="matricula"/>
+          <Argument type="int" name="cv"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="setCv" returnType="void" visibility="public">
+          <Argument type="int" name="cv"/>
+        </Method>
+        <Method name="getCv" returnType="int" visibility="public"/>
+        <Method name="getTipo" returnType="int" visibility="public"/>
+        <Method name="modulo" returnType="float" visibility="public">
+          <Argument type="int" name="dias"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Menu" package="boletin29" visibility="public" xPosition="609.0" yPosition="13.0">
+      <Fields>
+        <Field name="bCalcular" type="javax.swing.JButton" visibility="private"/>
+        <Field name="bSalir" type="javax.swing.JButton" visibility="private"/>
+        <Field name="cbTipo" type="javax.swing.JComboBox&lt;String&gt;" visibility="private"/>
+        <Field name="fDias" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel3" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jPanel1" type="javax.swing.JPanel" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="bSalirActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="bCalcularActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Velero" package="boletin29" visibility="public" xPosition="757.0" yPosition="361.0">
+      <Fields>
+        <Field name="mastiles" type="int" visibility="private"/>
+        <Field name="tipo" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="eslora"/>
+          <Argument type="String" name="matricula"/>
+          <Argument type="int" name="mastiles"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="setMastiles" returnType="void" visibility="public">
+          <Argument type="int" name="mastiles"/>
+        </Method>
+        <Method name="getMastiles" returnType="int" visibility="public"/>
+        <Method name="getTipo" returnType="int" visibility="public"/>
+        <Method name="modulo" returnType="float" visibility="public">
+          <Argument type="int" name="dias"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Yate" package="boletin29" visibility="public" xPosition="-3.0" yPosition="343.0">
+      <Fields>
+        <Field name="cv" type="int" visibility="private"/>
+        <Field name="camarotes" type="int" visibility="private"/>
+        <Field name="tipo" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="eslora"/>
+          <Argument type="String" name="matricula"/>
+          <Argument type="int" name="cv"/>
+          <Argument type="int" name="camarotes"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="setCv" returnType="void" visibility="public">
+          <Argument type="int" name="cv"/>
+        </Method>
+        <Method name="setCamarotes" returnType="void" visibility="public">
+          <Argument type="int" name="camarotes"/>
+        </Method>
+        <Method name="getCv" returnType="float" visibility="public"/>
+        <Method name="getCamarotes" returnType="int" visibility="public"/>
+        <Method name="getTipo" returnType="int" visibility="public"/>
+        <Method name="modulo" returnType="float" visibility="public">
+          <Argument type="int" name="dias"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="boletin29.Yate" target="boletin29.Barco"/>
+    <IsRelation name="is" source="boletin29.Velero" target="boletin29.Barco"/>
+    <IsRelation name="is" source="boletin29.Deportivo" target="boletin29.Barco"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
